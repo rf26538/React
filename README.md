@@ -29,3 +29,9 @@
         "last 2 FIrefox version",
         "last 2 version"
     ]
+
+        --- SETUP SCRIPT --
+
+    => initialy We are running "npx parcel index.html"
+    => after setup the project in the PACKAGE.JSON
+    We can run now "npm start" || "npm run start" (note both are same)
