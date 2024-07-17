@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client';
 
 const heading = React.createElement("h1", {id:"heading", className:"heading"}, "Hi there");
 
-
 //Nested Structure
 const elem = React.createElement(
     "div",
