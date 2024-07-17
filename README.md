@@ -56,3 +56,11 @@
                 Hello World! JSX
                 </h1>);
         console.log(jsxHeading);
+
+            --- REACT COMPONENT ---
+    => Functional component - NEW way 
+        -> Normal javascipt function which return some JSX
+        -> Always write the function name with Capital latter 
+            Hello()
+
+    => Class based component - OLD way (No body uses now)
