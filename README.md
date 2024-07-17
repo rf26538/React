@@ -62,5 +62,21 @@
         -> Normal javascipt function which return some JSX
         -> Always write the function name with Capital latter 
             Hello()
+        -> Component Composition - Put component inside component.
+
+        Ex:-
+            const HeadingComponent = () => <h1 id="newId" className="test">Functional Javaiscipt first component</h1>;
+
+            const HeadingComponent2 = () => {
+                return <h1 id="newId1" className="test">Functional Javaiscipt second component</h1>;
+            }
+
+            const HeadingComponent3 = () => (
+                <div id="container">
+                    <HeadingComponent />
+                    <HeadingComponent2 />
+                    <h1 id="newId" className="test">Functional Javaiscipt third component</h1>
+                </div>
+            );
 
     => Class based component - OLD way (No body uses now)
