@@ -79,4 +79,17 @@
                 </div>
             );
 
+        -> With the help of cully braces  {} any js expression in it
+
+        Ex:-
+            const number = 39;
+            const HeadingComponent4 = () => (
+                <div id="container">
+                    <h1>{number * 7 + 32 -33}</h1>
+                    <h1>{console.log(number)}</h1>
+                    <h1>{HeadingComponent}</h1>
+                    <h1 id="newId" className="test">Functional Javaiscipt third component</h1>
+                </div>
+            );
+
     => Class based component - OLD way (No body uses now)

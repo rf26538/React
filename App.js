@@ -22,7 +22,7 @@ const fn2 = () => {
     return true;
 }
 
-const HeadingComponent = () => <h1 id="newId" className="test">Functional Javaiscipt first component</h1>;
+const HeadingComponent = () => <span id="newId" className="test">Functional Javaiscipt first component</span>;
 
 const HeadingComponent2 = () => {
     return <h1 id="newId1" className="test">Functional Javaiscipt second component</h1>;
@@ -38,6 +38,19 @@ const HeadingComponent3 = () => (
     </div>
 );
 
+// With the help of cully braces  {} any js expression in it
+
+const number = 39;
+const HeadingComponent4 = () => (
+    <div id="container">
+        <h1>{number * 7 + 32 -33}</h1>
+        <h1>{console.log(number)}</h1>
+        {<HeadingComponent/>}
+        {<HeadingComponent3/>}
+        <h1 id="newId" className="test">Functional Javaiscipt third component</h1>
+    </div>
+);
+
 // Class based component - OLD way (No body uses now)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -45,4 +58,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //Call functional component - bable
 
-root.render(<HeadingComponent3/>);
+root.render(<HeadingComponent4 />);
