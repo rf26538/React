@@ -38,7 +38,13 @@ const HeadingComponent3 = () => (
     </div>
 );
 
+const Title = () => (
+        <h1 id="newId" className="test">New convention to show method</h1>
+);
 // With the help of cully braces  {} any js expression in it
+
+// const SupposedtestApiData = api.getData();
+// Jsx ecape the malicious code
 
 const number = 39;
 const HeadingComponent4 = () => (
@@ -47,6 +53,9 @@ const HeadingComponent4 = () => (
         <h1>{console.log(number)}</h1>
         {<HeadingComponent/>}
         {<HeadingComponent3/>}
+        {/* New Convantion to write title */}
+        <Title></Title>
+        <Title></Title>
         <h1 id="newId" className="test">Functional Javaiscipt third component</h1>
     </div>
 );
