@@ -41,6 +41,9 @@ const HeadingComponent3 = () => (
 const Title = () => (
         <h1 id="newId" className="test">New convention to show method</h1>
 );
+const Info = () => (
+    <h1 id="newId" className="test">Calling a function</h1>
+);
 // With the help of cully braces  {} any js expression in it
 
 // const SupposedtestApiData = api.getData();
@@ -56,6 +59,7 @@ const HeadingComponent4 = () => (
         {/* New Convantion to write title */}
         <Title></Title>
         <Title></Title>
+        {Info()}
         <h1 id="newId" className="test">Functional Javaiscipt third component</h1>
     </div>
 );
