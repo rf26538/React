@@ -1,0 +1,11 @@
+
+// Never keep hard coded string in component file
+
+<!-- Type of Export/Import -->
+    -- Default Export/Import --
+        export defult Component;
+        import Component from "path";
+
+    -- Named Export/Import -- 
+        export const Component;
+        import {component} from  "path";
