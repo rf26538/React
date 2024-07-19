@@ -93,3 +93,29 @@
             );
 
     => Class based component - OLD way (No body uses now)
+
+<!-- Inline css (not preferd way) -->
+
+    Ex1:-
+    const styleCard = {
+        backgroundColor: "#f0f0f0"
+    };
+
+    const Card = () => {
+        return (
+            <div className="res-card" style={styleCard}>
+                <h3>Call me chaw</h3>
+            </div>
+        );
+    }
+
+    Ex2:-
+    const Card = () => {
+        return (
+            <div className="res-card" style={{
+        backgroundColor: "#f0f0f0"
+    }}>
+                <h3>Call me chaw</h3>
+            </div>
+        );
+    }
