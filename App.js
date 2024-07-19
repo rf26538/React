@@ -31,7 +31,7 @@ const Card = (props) => {
         avgRating,
         sla,
         cuisines
-    } = resData?.info;
+    } = resData?.info; //Optional chaining whith '?' => resData?.info
 
     return (
         <div className="res-card" >
