@@ -133,5 +133,6 @@
         -- It calculate the diffrence and update the dom
      * React Fiber Algorithum cames in React-16 (New algorithum of DOM menupulation) -- Reconciliation
         -- New way to find the diffrence and update the dom
+     * Incremntal redaring -Ability to split the redering components into chunks
      * Due to these algorithums the react is fast 
      * */
