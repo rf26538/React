@@ -1,6 +1,6 @@
 import Card from "./Card";
 import resList from "../utils/mockdata";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Body = () => {
 
