@@ -119,3 +119,19 @@
             </div>
         );
     }
+
+    ---- Reconciliation algorithum ----
+
+    /**
+     * React makes vertual DOM (Vertual dom is reprasentation of actual dom) -- Basically react elemnts 
+        -- Vertual dom is Object ACtually
+        Ex:-
+        const heading = React.createElement("h1", {id:"heading", className:"heading"}, "Hi there");
+        console.log(heading) and it return object
+
+     * Diff Algorithum (Find outs the diffrent b/w old and new vertual dom)
+        -- It calculate the diffrence and update the dom
+     * React Fiber Algorithum cames in React-16 (New algorithum of DOM menupulation) -- Reconciliation
+        -- New way to find the diffrence and update the dom
+     * Due to these algorithums the react is fast 
+     * */
