@@ -23,7 +23,7 @@ const Card = (props) => {
             />
             <h3>{name}</h3>
             <h4>{cuisines.join(',')}</h4>
-            <h4>{"Ratings"+avgRating}</h4>
+            <h4>{"Ratings "+avgRating}</h4>
             <h4>{"delivery Time : "+sla.deliveryTime}</h4>
         </div>
     );

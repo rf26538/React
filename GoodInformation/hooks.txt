@@ -9,3 +9,12 @@
     -- Named Export/Import -- 
         export const Component;
         import {component} from  "path";
+
+    /**
+     * State veriable - Super power varible -> Hooks
+     * Normal Js utility functions
+     * Two most importent Hooks we use Most of the time we use these two importent Hook
+     * We will use these Hooks lot of times
+     * useState() - Superpowerfull state variable
+     * useEffect()
+     * */
