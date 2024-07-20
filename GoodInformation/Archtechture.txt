@@ -1,0 +1,15 @@
+            -- Monolith Architecture --
+
+    Info:- Same project we have API code, Ui code, Auth code, DB code etc All are in same project.
+            "When we have change something then we have to build and run all project From start"
+            Here everybody have to work on same reposetry
+
+            -- Microservice Architecture --
+
+     Info:-  All the Services example:- BakendServive, UiProject, Authenticatio, MentainDatabase, Sms, emailNotification
+             All the services combines togather make a project (Sepration of concern and Follows single responcible structure)
+
+             Elobration:- Suppose we have a project to make then all the services will cames with diffrent reposetry
+                          and build the full project. For every service all the teams diffrent Services
+
+                          All the services talk with db
