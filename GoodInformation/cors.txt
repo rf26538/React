@@ -1,0 +1,5 @@
+If we are getting CORS policy error like below
+"Access to fetch at 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.99740&lng=79.00110&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING' from origin 'http://localhost:1234' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled."
+
+-> Search CORS extention for chrome
+-> Install extention and enable it and the issue will be resolved

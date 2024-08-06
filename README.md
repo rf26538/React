@@ -136,3 +136,6 @@
      * Incremntal redaring -Ability to split the redering components into chunks
      * Due to these algorithums the react is fast 
      * */
+
+        // Show spinner is not a good way or better user expireance (use of Shimmer UI We load fake page or cards)
+        // Before api call use shimmer ui
