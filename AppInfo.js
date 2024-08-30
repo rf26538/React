@@ -105,7 +105,8 @@ const header5 = (
 /**
  * React functional component
  * we can render it like this
- * console.log(HeadingComponenet);
+ * We can call the component 
+ * like this HeadingComponenet(), <HeadingComponenet><HeadingComponenet/> Mostly used <HeadingComponenet/>
  * const root = ReactDOM.createRoot(document.getElementById("root"));
  * root.render(<HeadingComponenet/>);
  *  */ 
