@@ -1,0 +1,33 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "--- PARCEL ---\r     => Parce is doing HMR(hot module refreshment) when changes in code. \r     => It uses file watching algorithum which is written in c++.\r     => Caching for everything we are doing in codes.\r     => Do image optimization.\r     => minification\r     => Bundling\r     => Compress\r     => Consistence hashing\r     => Code spliting\r     => Diffrential bundlling - support older browsers\r     => Dignostics\r     => Error Handling\r     => Https\r     => Tree shaking - remove unused code for you\r     => diffrent build for dev and production",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rf26538/React.git"
+  },
+  "keywords": [
+    "react",
+    "rFazal"
+  ],
+  "author": "Rehan Fazal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rf26538/React/issues"
+  },
+  "homepage": "https://github.com/rf26538/React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
