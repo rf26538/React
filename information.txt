@@ -1,0 +1,26 @@
+### Install Doppler
+
+NOTE: Local development is pre-configured via the `doppler.yaml` file.
+
+1. Install Doppler CLI
+
+```
+npm run doppler:install
+```
+
+2. Login to Doppler
+
+```
+npm run doppler:login
+```
+
+3. Run setup. When prompted, choose to use settings from doppler.yaml
+
+```
+npm run doppler:setup
+```
+
+4. Download secrets from Doppler into .env
+
+```
+npm run doppler:download
