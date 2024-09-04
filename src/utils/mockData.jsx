@@ -1,3 +1,8 @@
+/**
+ *  default export 
+ * named export 
+ */
+
 const resList = [
     {
         "info": {
@@ -783,83 +788,4 @@ const resList = [
     }
 ];
 
-const resObj ={
-    "data" : {
-        "info": {
-            "id": "234875",
-            "name": "Adil Hotel",
-            "cloudinaryImageId": "gp1ityra6utvzqn6ghnv",
-            "locality": "Rautha Wada",
-            "areaName": "Chhindwara Locality",
-            "costForTwo": "₹150 for two",
-            "cuisines": [
-                "North Indian",
-                "Biryani",
-                "Tandoor"
-            ],
-            "avgRating": 4.4,
-            "parentId": "27123",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 39,
-                "lastMileTravel": 10.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "10.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-07-19 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "₹150 OFF",
-                "subHeader": "ABOVE ₹349",
-                "discountTag": "FLAT DEAL"
-            },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {},
-            "externalRatings": {
-                "aggregatedRating": {
-                    "rating": "--"
-                }
-            },
-            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        "analytics": {
-            "context": "seo-data-34784ad9-e539-4f2c-ab44-4f66c5cd9054"
-        },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/adil-hotel-rautha-wada-chhindwara-locality-chhindwara-234875",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
-        },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-    }
-};
+export default resList;

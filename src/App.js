@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import '../index.css';
-
-const styleCard = {
-    backgroundColor: "#f0f0f0",
-}
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Body from "./components/Body";
 
 const AppLayout = () => {
     return (

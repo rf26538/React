@@ -1,3 +1,6 @@
+import Card from "./Card";
+import resList from "../utils/mockData";
+
 const Body = () => {
     return (
         <div className="body">
@@ -17,3 +20,5 @@ const Body = () => {
         </div>
     );
 }
+
+export default Body;
