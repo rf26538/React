@@ -929,8 +929,13 @@ const Body = () => {
             <div className="search">Search</div>
             <div className="res-container">
                 {
-                    resList.map((restaurant) => {
-                       return <Card resData={restaurant} />;
+                     /**
+                     * Componets need to have unique id every time 
+                     *  Do not use index as key
+                     */
+
+                    resList.map((restaurant, index) => {
+                       return <Card key={restaurant.info.id} resData={restaurant} />;
                     })
                 }
             </div>
