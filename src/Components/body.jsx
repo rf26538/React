@@ -5,6 +5,11 @@ const Body = () => {
     return (
         <div className="body">
             <div className="search">Search</div>
+            <div className="filter">
+                <button className="filter-btn" onClick={() => {
+                    console.log("test");
+                }}>Top rated restaurant</button>
+            </div>
             <div className="res-container">
                 {
                      /**
