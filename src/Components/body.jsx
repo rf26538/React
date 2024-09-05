@@ -1,6 +1,6 @@
 import Card from "./Card";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Body = () => {
     // let listOfRestaurants = [
@@ -61,6 +61,10 @@ const Body = () => {
     // ];
 
     const [listOfRestaurants, setListOfRestaurant] = useState(resList);
+
+    useEffect(() => {
+        console.log("useEffect cllaed");
+    }, [])
 
     return (
         <div className="body">
