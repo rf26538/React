@@ -1,6 +1,8 @@
 import Card from "./Card";
 import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
+import {API_URL} from "../utils/constants";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
     // let listOfRestaurants = [
@@ -60,11 +62,40 @@ const Body = () => {
     //     }
     // ];
 
-    const [listOfRestaurants, setListOfRestaurant] = useState(resList);
+    // const [listOfRestaurants, setListOfRestaurant] = useState(resList);
+    const [listOfRestaurants, setListOfRestaurant] = useState([]);
 
     useEffect(() => {
-        console.log("useEffect cllaed");
+        console.log("use Effect called");
+        // fetchData();
+        setListOfRestaurant(resList);
     }, [])
+
+    const fetchData = async () => {
+         /**
+         * We need to enable corrs policy to use the third party APIs
+         */
+        const data = await fetch(API_URL);
+        const json = await data.json();
+
+        console.log(json);
+        /**
+         * We can set the APIs data like below
+         * Why we are using optinal chaing ? read about it
+         * We can use the json object like this also json.data.cards[2].data.data.cards
+         */
+        // setListOfRestaurant(json?.data?.cards[2]?.data?.data?.cards)
+    }
+
+    console.log("renderd called");
+
+    if(listOfRestaurants.length === 0) {
+        /**
+         * return <h3>Loading....</h3>
+         * Using a sppiner is not a good way use insted of it --Shimmer UI--.
+         */
+        return <Shimmer/>;
+    }
 
     return (
         <div className="body">
