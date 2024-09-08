@@ -64,11 +64,19 @@ const Body = () => {
 
     // const [listOfRestaurants, setListOfRestaurant] = useState(resList);
     const [listOfRestaurants, setListOfRestaurant] = useState([]);
+    const [listOfFilterdRestaurants, setlistOfFilterdRestaurants] = useState([]);
+    const [searchText, setSearchText] = useState();
 
+    /**
+     * if no dependency array use effed will called after every render
+     *  if dependency array is empty [] use effect will be called initial render only
+     *  if we have something as depency array [something] when the dependency array is called
+     */
     useEffect(() => {
         console.log("use Effect called");
         // fetchData();
         setListOfRestaurant(resList);
+        setlistOfFilterdRestaurants(resList);
     }, [])
 
     const fetchData = async () => {
@@ -99,8 +107,22 @@ const Body = () => {
 
     return (
         <div className="body">
-            <div className="search">Search</div>
             <div className="filter">
+                <div className="search">
+                    {/**
+                     * Reconceliation is happening here
+                     * by re-rending when a little change is happening
+                     */
+                     }
+                   <input type="text" placeholder="search" value={searchText} onChange={(e) => {
+                       setSearchText(e.target.value);
+                   }}></input>
+                   <button onClick={() => {
+                        console.log(searchText);
+                        const filterdRestaurants = listOfRestaurants.filter((res) => res.info.name.includes(searchText));
+                        setlistOfFilterdRestaurants(filterdRestaurants);
+                   }}>Search</button>
+                </div>
                 <button className="filter-btn" onClick={() => {
                 const filterdList = listOfRestaurants.filter(
                         (res) => res.info.avgRating > 4.3
@@ -116,7 +138,7 @@ const Body = () => {
                      *  Do not use index as key
                      */
 
-                     listOfRestaurants.map((restaurant, index) => {
+                     listOfFilterdRestaurants.map((restaurant, index) => {
                        return <Card key={restaurant.info.id} resData={restaurant} />;
                     })
                 }
