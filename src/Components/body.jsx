@@ -74,9 +74,9 @@ const Body = () => {
      */
     useEffect(() => {
         console.log("use Effect called");
-        // fetchData();
-        setListOfRestaurant(resList);
-        setlistOfFilterdRestaurants(resList);
+        fetchData();
+        // setListOfRestaurant(resList);
+        // setlistOfFilterdRestaurants(resList);
     }, [])
 
     const fetchData = async () => {
@@ -85,13 +85,14 @@ const Body = () => {
          */
         const data = await fetch(API_URL);
         const json = await data.json();
-
-        console.log(json);
         /**
          * We can set the APIs data like below
          * Why we are using optinal chaing ? read about it
          * We can use the json object like this also json.data.cards[2].data.data.cards
-         */
+        */
+        const resList = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants ;
+        setListOfRestaurant(resList);
+        setlistOfFilterdRestaurants(resList);
         // setListOfRestaurant(json?.data?.cards[2]?.data?.data?.cards)
     }
 
@@ -119,16 +120,18 @@ const Body = () => {
                    }}></input>
                    <button onClick={() => {
                         console.log(searchText);
-                        const filterdRestaurants = listOfRestaurants.filter((res) => res.info.name.includes(searchText));
+                        const filterdRestaurants = listOfRestaurants.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                         setlistOfFilterdRestaurants(filterdRestaurants);
                    }}>Search</button>
                 </div>
-                <button className="filter-btn" onClick={() => {
-                const filterdList = listOfRestaurants.filter(
+                <button 
+                className="filter-btn" 
+                onClick={() => {
+                    const filterdList = listOfRestaurants.filter(
                         (res) => res.info.avgRating > 4.3
                     );
-                    setListOfRestaurant(filterdList);
-                    console.log(filterdList);
+                    setlistOfFilterdRestaurants(filterdList);
+                    console.log(filterdList); 
                 }}>Top rated restaurant</button>
             </div>
             <div className="res-container">
